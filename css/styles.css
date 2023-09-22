@@ -61,7 +61,8 @@ ul {
 a {
   text-decoration: none;
 }
-.header {border-bottom: 1px solid #e7e9fc
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -81,7 +82,6 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
 }
 
 .logo-grey {
@@ -106,7 +106,8 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-item:hover,
@@ -117,8 +118,6 @@ a {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .contacts {
@@ -146,7 +145,7 @@ a {
 }
 
 .hero {
-padding: 188px 0;
+  padding: 188px 0;
 }
 
 .hero-container {
@@ -182,11 +181,11 @@ padding: 188px 0;
   background-color: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
-display: block;
-min-width: 169px;
-height: 56px;
-border: none;
-margin: 0 auto;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
 }
 
 .btn-order:focus,
@@ -211,7 +210,7 @@ margin: 0 auto;
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .features-cubtitle {
@@ -232,7 +231,7 @@ margin: 0 auto;
 /* EMPLOYEES */
 
 .employees {
-padding: 120px 0;
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
 
@@ -245,18 +244,18 @@ padding: 120px 0;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   padding-top: 120px;
-  margin-bottom: 72px
+  margin-bottom: 72px;
 }
 
 .employees-item {
   background-color: #fff;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .employees-info {
- padding: 32px 0;
+  padding: 32px 0;
 }
- 
+
 .employees-img {
   margin-bottom: 32px;
 }
@@ -288,7 +287,6 @@ padding: 120px 0;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
 }
 
 /* OUR PORTFOLIO */
@@ -309,10 +307,10 @@ padding: 120px 0;
   row-gap: 48px;
 }
 .benefits-name {
-padding: 32px 16px;
-border: 1px solid #e7e9fc;
-border-top: none;
-margin-bottom: 8px
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 .benefits-item {
   background: #fff;
