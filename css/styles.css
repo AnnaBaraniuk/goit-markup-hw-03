@@ -40,14 +40,14 @@ img {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
 .container {
   width: 100%;
   max-width: 1158px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   margin: 0 auto;
   outline: 2px solid red;
 }
@@ -61,13 +61,17 @@ ul {
 a {
   text-decoration: none;
 }
+.header {border-bottom: 1px solid #e7e9fc
+}
 
 .header-nav {
   display: flex;
   gap: 76px;
+  align-items: center;
 }
 
 .header-logo {
+  margin-right: 76px;
   display: flex;
   align-items: center;
   color: #4d5ae5;
@@ -77,6 +81,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
 }
 
 .logo-grey {
@@ -93,6 +98,7 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-item {
@@ -139,7 +145,7 @@ a {
 }
 
 .hero {
-  padding-bottom: 120px;
+padding: 188px 0;
 }
 
 .hero-container {
@@ -172,23 +178,26 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
+  border-radius: 4px;
   cursor: pointer;
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
+display: block;
+min-width: 169px;
+height: 56px;
+border: none;
+margin: 0 auto;
 }
 
 .btn-order:focus,
 .btn-order:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* FEATURES */
 
 .features {
   background-color: #fff;
+  padding: 120px 0;
 }
 
 .features-list {
@@ -201,7 +210,7 @@ a {
 }
 
 .features-item {
-  width: calc((100% - 24px * 3) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .features-cubtitle {
@@ -222,7 +231,7 @@ a {
 /* EMPLOYEES */
 
 .employees {
-  padding-top: 120px;
+padding: 120px 0;
   background-color: #f4f4fd;
 }
 
@@ -235,22 +244,29 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   padding-top: 120px;
+  margin-bottom: 72px
 }
 
 .employees-item {
   background-color: #fff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
+.employees-info {
+ padding: 32px 0;
+}
+ 
 .employees-img {
   margin-bottom: 32px;
 }
 .employees-name {
+  text-align: center;
+  margin-bottom: 8px;
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
-  text-align: center;
 }
 
 .employees-list {
@@ -268,34 +284,41 @@ a {
 }
 
 .employees-position {
+  text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  
 }
 
 /* OUR PORTFOLIO */
 
 .benefits {
-  padding-top: 112px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
   padding-bottom: 120px;
+  row-gap: 48px;
 }
-
+.benefits-name {
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
+border-top: none;
+margin-bottom: 8px
+}
 .benefits-item {
-  border-bottom: 1px solid #e7e9fc;
   background: #fff;
   width: calc((100% - 24px * 2) / 3);
 }
 .benefits-title {
+  margin-bottom: 72px;
   padding-top: 120px;
   color: #2e2f42;
   text-align: center;
@@ -304,7 +327,6 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
 }
 
 .benefits-img {
@@ -317,7 +339,6 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
   text-align: center;
 }
 
@@ -333,11 +354,11 @@ a {
 
 .footer {
   background: #2e2f42;
-  padding-top: 101px;
+  padding: 100px 0;
 }
 
 .footer-logo {
-  padding-bottom: 101px;
+  padding-top: 101px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -345,6 +366,8 @@ a {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-white {
