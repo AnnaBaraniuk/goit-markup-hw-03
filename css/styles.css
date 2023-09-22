@@ -47,9 +47,9 @@ img {
 .container {
   width: 100%;
   max-width: 1158px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 /* HEADER */
@@ -106,6 +106,7 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-item:hover,
@@ -340,6 +341,7 @@ margin-bottom: 8px
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .benefits-text {
