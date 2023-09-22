@@ -31,8 +31,22 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
   outline: 2px solid red;
@@ -130,26 +144,25 @@ a {
 
 .hero-container {
   background: #2e2f42;
-  padding-top: 188px;
-  padding-right: 472px;
-  padding-bottom: 292px;
-  padding-left: 472px;
 }
 
 .hero-title {
+  padding-top: 188px;
   color: #fff;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  padding-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto;
 }
 
 /* BUTTON */
 
 .button {
   text-align: center;
+  padding-top: 48px;
+  padding-bottom: 188px;
 }
 
 .btn-order {
@@ -176,11 +189,11 @@ a {
 
 .features {
   background-color: #fff;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .features-list {
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-left: 156px;
   padding-right: 156px;
   display: flex;
@@ -188,7 +201,7 @@ a {
 }
 
 .features-item {
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .features-cubtitle {
@@ -276,11 +289,14 @@ a {
   list-style: none;
   padding-bottom: 120px;
 }
+
 .benefits-item {
-  border: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
   background: #fff;
+  width: calc((100% - 24px * 2) / 3);
 }
 .benefits-title {
+  padding-top: 120px;
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -317,13 +333,11 @@ a {
 
 .footer {
   background: #2e2f42;
-  padding-top: 101.5px;
-  padding-right: 1169px;
-  padding-bottom: 189.5px;
-  padding-left: 200px;
+  padding-top: 101px;
 }
 
 .footer-logo {
+  padding-bottom: 101px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -350,4 +364,5 @@ a {
   letter-spacing: 0.02em;
   margin-top: 17.5px;
   max-width: 264px;
+  padding-bottom: 100px;
 }
