@@ -145,15 +145,20 @@ a {
 }
 
 .hero {
-  padding: 188px 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
   background: #2e2f42;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
   padding-top: 188px;
+  padding-bottom: 48px;
   color: #fff;
   font-size: 56px;
   font-weight: 700;
@@ -164,12 +169,6 @@ a {
 }
 
 /* BUTTON */
-
-.button {
-  text-align: center;
-  padding-top: 48px;
-  padding-bottom: 188px;
-}
 
 .btn-order {
   color: #fff;
